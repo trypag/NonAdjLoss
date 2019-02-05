@@ -5,7 +5,7 @@ import numpy as np
 import os
 import torch
 
-from torchmed.patterns import SlidingWindow
+from torchmed.patterns import SquaredSlidingWindow
 from torchmed.readers import SitkReader
 
 
@@ -59,7 +59,7 @@ def image2graph3d_patch(image, adj_mat, n_classes, n_size=1):
     # 3D patch size based on neighborhood size (n_size)
     patch_size = (2 * n_size + 1,) * 3
     # sliding window with padding of value n_classes - 1 on borders
-    pattern = SlidingWindow(patch_size, True, n_classes)
+    pattern = SquaredSlidingWindow(patch_size, True, n_classes)
     pattern.prepare(image)
 
     # loop over each voxel of the image

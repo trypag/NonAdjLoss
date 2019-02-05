@@ -4,6 +4,11 @@ Image segmentation based on convolutional neural networks is proving to be a pow
 
 The NonAdjacency loss can be applied to any pre-trained models, you will first need to extract the adjacency prior from an annotated training set and finally re-train your model to enforce the constraint on the model's output. You can also apply it on new images without ground truth !
 
+### Example MICCAI 2012 multi-atlas segmentation challenge
+
+An example implementation for this brain segmentation challenge, with adjacency
+penalization by the NonAdjLoss are available in our in-house pytorch library for medical imaging. [HERE](https://github.com/trypag/torchmed/tree/master/examples/02_segmentation_NonAdjLoss)
+
 ### Adjacency graph extraction
 
 Use the following script to extract the adjacency map from the dataset :
