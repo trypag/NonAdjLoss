@@ -7,7 +7,7 @@ The NonAdjacency loss can be applied to any pre-trained models, you will first n
 ### Example MICCAI 2012 multi-atlas segmentation challenge
 
 An example implementation for this brain segmentation challenge, with adjacency
-penalization by the NonAdjLoss are available in our in-house pytorch library for medical imaging. [HERE](https://github.com/trypag/torchmed/tree/master/examples/02_segmentation_NonAdjLoss)
+penalization by the NonAdjLoss are available in our in-house pytorch library for medical imaging. [HERE](https://github.com/trypag/torchmed/tree/master/examples/02_brain_segmentation_NonAdjLoss_MRI)
 
 ### Adjacency graph extraction
 
